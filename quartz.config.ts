@@ -10,6 +10,7 @@ const config: QuartzConfig = {
   configuration: {
     pageTitle: "Qnurye's Notes",
     pageTitleSuffix: " | Qnury'es",
+    keywords: "Qnurye, Quartz, Obsidian, Notes, Knowledge Base",
     enableSPA: true,
     enablePopovers: true,
     analytics: {

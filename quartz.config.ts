@@ -17,7 +17,7 @@ const config: QuartzConfig = {
       websiteId: "7489878c-0da8-456a-9301-75f2b04d196d",
     },
     locale: "en-US",
-    baseUrl: "pad.qnuy.es",
+    baseUrl: "pad.qnury.es",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
@@ -63,10 +63,10 @@ const config: QuartzConfig = {
       }),
       Plugin.SyntaxHighlighting({
         theme: {
-          light: "github-light",
-          dark: "github-dark",
+          light: "one-light",
+          dark: "one-dark-pro",
         },
-        keepBackground: false,
+        keepBackground: true,
       }),
       Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
       Plugin.GitHubFlavoredMarkdown(),

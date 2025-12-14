@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pad.qnury.es/sitemap.xml

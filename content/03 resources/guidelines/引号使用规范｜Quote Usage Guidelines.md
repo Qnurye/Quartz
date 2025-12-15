@@ -1,13 +1,11 @@
 ---
-{"publish":true,"aliases":"","created":"2025-12-15T13:23:25+08:00","modified":"2025-12-16T01:10:13.023+08:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-12-15T13:23:25+08:00","modified":"2025-12-16T01:11:54.224+08:00","cssclasses":""}
 ---
 
 
-# 引号使用规范｜Quote Usage Guidelines
+# 中文语境
 
-## 中文语境
-
-### 1. 简体中文
+## 1. 简体中文
 
 在规范的简体中文横排文稿中，建议遵循国家标准 [^1]：
 
@@ -18,7 +16,7 @@
 > [!example]
 > “他问我：‘你读过《红楼梦》吗？’我说读过。”
 
-### 2. 繁体中文
+## 2. 繁体中文
 
 在繁体中文（台湾、香港）及日文语境中，或为了追求排版美学，推荐使用直角引号 [^2]：
 
@@ -33,11 +31,11 @@
 
 ---
 
-## Western Context
+# Western Context
 
-### 1. English Usage
+## 1. English Usage
 
-#### US Style
+### US Style
 
 - **Primary**: Double quotes `“…”`.
 - **Secondary (Nested)**: Single quotes `‘…’`.
@@ -46,7 +44,7 @@
 > [!example]
 > "I read 'The Raven,'" he said.
 
-#### UK Style
+### UK Style
 
 - **Primary**: Historically single quotes `‘…’`, though double quotes are increasingly common.
 - **Secondary (Nested)**: Double quotes `“…”`.
@@ -55,7 +53,7 @@
 > [!example]
 > He called it ‘meaningless’; however, I disagree.
 
-### 2. European Usage (Guillemets)
+## 2. European Usage (Guillemets)
 
 Guillemets (`«»`) are the standard quotation marks in many European languages, though styles vary significantly by region.
 
@@ -76,7 +74,7 @@ Guillemets (`«»`) are the standard quotation marks in many European languages,
 
 ---
 
-## Technical Note
+# Technical Note
 
 In programming and markup languages (JSON, YAML, JavaScript, etc.), always use straight quotes:
 
@@ -91,4 +89,3 @@ Smart quotes (curly quotes) will cause syntax errors in code.
 [^4]: [University of Oxford Style Guide](https://www.ox.ac.uk/sites/files/oxford/aUniversity_of_Oxford_Style_Guide_2025.docx)
 [^5]: [Lexique des règles typographiques en usage à l'Imprimerie nationale](https://les-unpertinents.fr/Manuscrits/Lexique%20des%20r%C3%A8gles%20typographiques%20en%20usage%20%C3%A0%20l%27Imprimerie%20nationale2.pdf)
 [^6]: [Duden - Anführungszeichen](https://www.duden.de/sprachwissen/rechtschreibregeln/anfuehrungszeichen)
-

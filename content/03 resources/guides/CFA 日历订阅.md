@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"","title":"CFA 日历订阅","created":"2025-07-06 21:00:00","modified":"2025-12-28T18:06:22.837+08:00","tags":["cloudflare"],"cssclasses":""}
+{"publish":true,"aliases":"","title":"CFA 日历订阅","created":"2025-07-06 21:00:00","modified":"2025-12-28T23:19:37.582+08:00","tags":["cloudflare"],"cssclasses":""}
 ---
 
 
@@ -33,7 +33,7 @@
 
 ![[04 archive/obsidian in history/Judah-PC/assets/attachments/Pasted image 20250706211541.png]]
 
-输入订阅链接。比如我常住苏州，比较关注苏州的片单，则可输入 `https://cfa.qnury.es/suzhou/calendar.ics`。
+输入订阅链接。比如我常驻苏州，比较关注苏州的片单，则可输入 `https://cfa.qnury.es/suzhou/calendar.ics`。
 
 ![[04 archive/obsidian in history/Judah-PC/assets/attachments/Pasted image 20250706211757.png]]
 
@@ -51,7 +51,7 @@
 
 ![[04 archive/obsidian in history/Judah-PC/assets/attachments/Pasted image 20250706213049.png]]
 
-假如我是常住在北京市百子湾地区的居民，更关注百子湾 1 号厅的排片，那么这次我可以填入 `https://cfa.qnury.es/beijing/baiziwan/1/calendar.ics`。输入完成后，点击 `订阅` 按钮，即可完成订阅。
+假如我是常驻在北京市百子湾地区的居民，更关注百子湾 1 号厅的排片，那么这次我可以填入 `https://cfa.qnury.es/beijing/baiziwan/1/calendar.ics`。输入完成后，点击 `订阅` 按钮，即可完成订阅。
 
 ![[04 archive/obsidian in history/Judah-PC/assets/attachments/Pasted image 20250706213244.png]]
 

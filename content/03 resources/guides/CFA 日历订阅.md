@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"","title":"CFA 日历订阅","created":"2025-07-06 21:00:00","modified":"2025-12-28T17:53:38.008+08:00","tags":["cloudflare"],"cssclasses":""}
+{"publish":true,"aliases":"","title":"CFA 日历订阅","created":"2025-07-06 21:00:00","modified":"2025-12-28T17:58:56.896+08:00","tags":["cloudflare"],"cssclasses":""}
 ---
 
 
@@ -23,9 +23,9 @@
 | <https://cfa.qnury.es/suzhou/jiangnan/3/calendar.ics>    | 江南分馆 3 号厅本月片单 |
 | <https://cfa.qnury.es/suzhou/jiangnan/4/calendar.ics>    | 江南分馆 4 号厅本月片单 |
 
-## 订阅方法
+# 订阅方法
 
-### Google Calendar
+## Google Calendar
 
 以 Web App 为例，点击左下角的➕号，点击 `通过网址添加`。
 
@@ -43,7 +43,7 @@
 
 ![[04 archive/obsidian in history/Judah-PC/assets/attachments/Pasted image 20250706212456.png]]
 
-### iCloud Calendar
+## iCloud Calendar
 
 以 iOS 端为例。类似上面提到的 Google Calendar 操作方法，在 iCloud Calendar 中，点击主界面下部的 `日历`，点击左下角的 `添加日历订阅`，进入订阅日历新建页面。
 
@@ -60,3 +60,7 @@
 类似地，决定好要看的影片，可以长按活动，选择 `复制`，然后点击右上角的➕号，添加新活动，即可创建一份同样的活动到自己常用的日历账户。
 
 ![[04 archive/obsidian in history/Judah-PC/assets/attachments/Pasted image 20250706213659.png]]![[04 archive/obsidian in history/Judah-PC/assets/attachments/Pasted image 20250706213847.png]]
+
+# 了解更多
+
+- [GitHub](https://github.com/Qnurye/cfa-cal)

@@ -1,9 +1,11 @@
 ---
-{"publish":true,"aliases":"","title":"Read me","created":"2025-12-13T21:08:26+08:00","modified":"2025-12-14T14:56:59.463+08:00","tags":["#README"],"cssclasses":""}
+{"publish":true,"aliases":"","title":"Read me","created":"2025-12-13T21:08:26+08:00","modified":"2025-12-28T01:08:09.282+08:00","tags":["README"],"cssclasses":""}
 ---
 
 
 # Hey There! 👋
+
+> Sealed bonds, closed circles.
 
 This is my so-called Digital Garden (or Second Brain / PKMS / Knowledge Base—whatever you prefer to call it:).
 

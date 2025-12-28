@@ -20,7 +20,7 @@ const config: QuartzConfig = {
     locale: "en-US",
     baseUrl: "pad.qnury.es",
     ignorePatterns: ["private", "templates", ".obsidian"],
-    defaultDateType: "modified",
+    defaultDateType: "created",
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,

@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025-2026年伊朗抗议活动深度报告</title>
+    <meta name="description" content="深入了解2025年12月至2026年1月伊朗大规模抗议活动的起因、经过与影响">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-bg: #FAFAFA;
+            --color-bg-alt: #F5F5F5;
+            --color-text: #1A1A1A;
+            --color-text-secondary: #4A4A4A;
+            --color-text-muted: #6B6B6B;
+            --color-accent: #8B0000;
+            --color-accent-light: #B22222;
+            --color-border: #E0E0E0;
+            --color-card-bg: #FFFFFF;
+            --color-highlight: rgba(139, 0, 0, 0.08);
+            --font-serif: 'Noto Serif SC', 'Source Han Serif SC', serif;
+            --font-sans: 'Noto Sans SC', 'Source Han Sans SC', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(250, 250, 250, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--color-border);
+            z-index: 1000;
+            transform: translateY(-100%);
+            transition: transform 0.3s ease;
+        }
+
+        .header.visible {
+            transform: translateY(0);
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-title {
+            font-family: var(--font-serif);
+            font-size: 1.1rem;
+            color: var(--color-accent);
+            font-weight: 600;
+        }
+
+        .header-nav {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .header-nav a {
+            color: var(--color-text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+
+        .header-nav a:hover {
+            color: var(--color-accent);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 4rem 2rem;
+            background: linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg-alt) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%238B0000' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.5;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+        }
+
+        .hero-label {
+            display: inline-block;
+            padding: 0.5rem 1.5rem;
+            background: var(--color-accent);
+            color: white;
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            margin-bottom: 2rem;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        .hero-title {
+            font-family: var(--font-serif);
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.8s ease 0.2s forwards;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--color-text-secondary);
+            font-weight: 300;
+            margin-bottom: 2rem;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.8s ease 0.4s forwards;
+        }
+
+        .hero-meta {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            font-size: 0.9rem;
+            color: var(--color-text-muted);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.8s ease 0.6s forwards;
+        }
+
+        .hero-scroll {
+            position: absolute;
+            bottom: 3rem;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            animation: fadeIn 1s ease 1s forwards, bounce 2s ease-in-out 1.5s infinite;
+        }
+
+        .hero-scroll svg {
+            width: 24px;
+            height: 24px;
+            stroke: var(--color-text-muted);
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateX(-50%) translateY(0); }
+            50% { transform: translateX(-50%) translateY(10px); }
+        }
+
+        /* Main Content */
+        .main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        /* Section Styles */
+        .section {
+            margin-bottom: 5rem;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .section-title {
+            font-family: var(--font-serif);
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--color-accent);
+            display: inline-block;
+        }
+
+        .section p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        /* Key Stats */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 3rem 0;
+        }
+
+        .stat-card {
+            background: var(--color-card-bg);
+            padding: 2rem;
+            border: 1px solid var(--color-border);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: default;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+
+        .stat-number {
+            font-family: var(--font-serif);
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--color-accent);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--color-text-secondary);
+        }
+
+        .stat-note {
+            font-size: 0.75rem;
+            color: var(--color-text-muted);
+            margin-top: 0.5rem;
+        }
+
+        /* Timeline */
+        .timeline {
+            position: relative;
+            padding-left: 3rem;
+            margin: 3rem 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(180deg, var(--color-accent) 0%, var(--color-border) 100%);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2.5rem;
+            padding-bottom: 2.5rem;
+            border-bottom: 1px solid var(--color-border);
+            opacity: 0;
+            transform: translateX(-20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .timeline-item.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .timeline-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -3rem;
+            top: 0.5rem;
+            width: 12px;
+            height: 12px;
+            background: var(--color-accent);
+            border-radius: 50%;
+            transform: translateX(-5px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .timeline-item:hover::before {
+            transform: translateX(-5px) scale(1.3);
+            box-shadow: 0 0 0 4px rgba(139, 0, 0, 0.2);
+        }
+
+        .timeline-date {
+            display: inline-block;
+            background: var(--color-highlight);
+            padding: 0.25rem 0.75rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--color-accent);
+            margin-bottom: 0.75rem;
+        }
+
+        .timeline-title {
+            font-family: var(--font-serif);
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+
+        .timeline-content {
+            font-size: 0.95rem;
+            color: var(--color-text-secondary);
+        }
+
+        /* Quote Block */
+        .quote-block {
+            background: var(--color-card-bg);
+            border-left: 4px solid var(--color-accent);
+            padding: 2rem;
+            margin: 2rem 0;
+            font-style: italic;
+        }
+
+        .quote-text {
+            font-family: var(--font-serif);
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .quote-source {
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+            font-style: normal;
+        }
+
+        /* Info Cards */
+        .info-card {
+            background: var(--color-card-bg);
+            border: 1px solid var(--color-border);
+            padding: 2rem;
+            margin: 2rem 0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .info-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+        }
+
+        .info-card-title {
+            font-family: var(--font-serif);
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--color-accent);
+        }
+
+        .info-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .info-card li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .info-card li:last-child {
+            border-bottom: none;
+        }
+
+        .info-card li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 1rem;
+            width: 6px;
+            height: 6px;
+            background: var(--color-accent);
+            border-radius: 50%;
+        }
+
+        /* Highlight Text */
+        .highlight {
+            background: linear-gradient(180deg, transparent 60%, rgba(139, 0, 0, 0.15) 60%);
+            padding: 0 0.2rem;
+        }
+
+        /* Data Visualization */
+        .data-viz {
+            background: var(--color-card-bg);
+            border: 1px solid var(--color-border);
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .data-viz-title {
+            font-family: var(--font-serif);
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .bar-chart {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .bar-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .bar-label {
+            width: 100px;
+            font-size: 0.85rem;
+            text-align: right;
+            flex-shrink: 0;
+        }
+
+        .bar-container {
+            flex: 1;
+            height: 24px;
+            background: var(--color-bg-alt);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--color-accent) 0%, var(--color-accent-light) 100%);
+            width: 0;
+            transition: width 1s ease;
+        }
+
+        .bar-value {
+            width: 80px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            flex-shrink: 0;
+        }
+
+        /* Sources */
+        .sources {
+            background: var(--color-bg-alt);
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+
+        .sources-title {
+            font-family: var(--font-serif);
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .sources-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            gap: 0.75rem;
+        }
+
+        .sources-list a {
+            color: var(--color-text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+
+        .sources-list a:hover {
+            color: var(--color-accent);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 3rem 2rem;
+            background: var(--color-text);
+            color: var(--color-bg);
+        }
+
+        .footer p {
+            font-size: 0.85rem;
+            opacity: 0.7;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-nav {
+                display: none;
+            }
+
+            .hero-meta {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .timeline {
+                padding-left: 2rem;
+            }
+
+            .timeline-item::before {
+                left: -2rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Progress Bar */
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: var(--color-accent);
+            z-index: 1001;
+            width: 0;
+            transition: width 0.1s linear;
+        }
+
+        /* TOC */
+        .toc {
+            position: fixed;
+            right: 2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            display: none;
+        }
+
+        @media (min-width: 1200px) {
+            .toc {
+                display: block;
+            }
+        }
+
+        .toc-item {
+            display: block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--color-border);
+            margin: 1rem 0;
+            transition: background 0.3s, transform 0.3s;
+            cursor: pointer;
+        }
+
+        .toc-item:hover,
+        .toc-item.active {
+            background: var(--color-accent);
+            transform: scale(1.3);
+        }
+
+        /* Image placeholder */
+        .image-placeholder {
+            background: var(--color-bg-alt);
+            border: 1px dashed var(--color-border);
+            padding: 3rem;
+            text-align: center;
+            margin: 2rem 0;
+            color: var(--color-text-muted);
+            font-size: 0.9rem;
+        }
+
+        .image-placeholder svg {
+            width: 48px;
+            height: 48px;
+            margin-bottom: 1rem;
+            stroke: var(--color-border);
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-bar" id="progressBar"></div>
+
+    <header class="header" id="header">
+        <div class="header-content">
+            <div class="header-title">伊朗抗议活动深度报告</div>
+            <nav class="header-nav">
+                <a href="#overview">概述</a>
+                <a href="#timeline">时间线</a>
+                <a href="#causes">起因分析</a>
+                <a href="#response">各方反应</a>
+                <a href="#impact">影响与展望</a>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="toc" id="toc">
+        <a class="toc-item" href="#overview" title="概述"></a>
+        <a class="toc-item" href="#timeline" title="时间线"></a>
+        <a class="toc-item" href="#causes" title="起因分析"></a>
+        <a class="toc-item" href="#response" title="各方反应"></a>
+        <a class="toc-item" href="#impact" title="影响与展望"></a>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <span class="hero-label">深度报道</span>
+            <h1 class="hero-title">2025-2026年伊朗抗议活动</h1>
+            <p class="hero-subtitle">货币崩溃引发的政治危机：自2022年以来最大规模的民众抗议</p>
+            <div class="hero-meta">
+                <span>更新于 2026年1月16日</span>
+                <span>阅读时长 约15分钟</span>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 5v14M19 12l-7 7-7-7"/>
+            </svg>
+        </div>
+    </section>
+
+    <main class="main">
+        <section class="section" id="overview">
+            <h2 class="section-title">事件概述</h2>
+
+            <p>2025年12月28日，伊朗首都德黑兰的大巴扎商人发起罢工，抗议本国货币里亚尔的持续暴跌。这场最初由经济问题引发的抗议活动，迅速蔓延至全国31个省份的近200个城市，演变为<span class="highlight">自2022年玛莎·阿米尼事件以来伊朗规模最大的民众抗议运动</span>。</p>
+
+            <p>随着抗议规模的扩大，示威者的诉求也从经济层面上升至政治层面，出现了直接针对最高领袖哈梅内伊的口号。伊朗政府随后实施了大规模镇压行动，造成大量平民伤亡，引发国际社会强烈谴责。</p>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number" data-target="12000">0</span>
+                    <span class="stat-label">估计死亡人数</span>
+                    <span class="stat-note">部分来源估计高达20,000</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="18137">0</span>
+                    <span class="stat-label">被逮捕人数</span>
+                    <span class="stat-note">截至1月13日统计</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="190">0</span>
+                    <span class="stat-label">抗议蔓延城市</span>
+                    <span class="stat-note">覆盖全部31个省份</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="19">0</span>
+                    <span class="stat-label">抗议持续天数</span>
+                    <span class="stat-note">截至1月16日</span>
+                </div>
+            </div>
+
+            <div class="quote-block">
+                <p class="quote-text">"这不仅仅是一场经济抗议，而是一场政治革命的开始。"</p>
+                <p class="quote-source">— 伊朗人权组织分析</p>
+            </div>
+        </section>
+
+        <section class="section" id="timeline">
+            <h2 class="section-title">事件时间线</h2>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="timeline-date">2025年12月28日</span>
+                    <h3 class="timeline-title">德黑兰大巴扎商人罢工</h3>
+                    <p class="timeline-content">抗议活动始于德黑兰大巴扎，商人和店主因里亚尔暴跌、物价飞涨而发起罢工。当时1美元可兑换约140万里亚尔，较2022年贬值超过三倍。</p>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="timeline-date">2025年12月29-30日</span>
+                    <h3 class="timeline-title">抗议蔓延全国</h3>
+                    <p class="timeline-content">抗议活动迅速蔓延至南部格什姆岛、北部赞詹和哈马丹等地。示威者开始高喊政治口号，包括"独裁者去死"和"哈梅内伊今年将被推翻"。伊朗央行行长被撤换。</p>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="timeline-date">2025年12月31日 - 2026年1月3日</span>
+                    <h3 class="timeline-title">镇压行动开始</h3>
+                    <p class="timeline-content">安全部队开始对示威者使用武力。据国际特赦组织统计，仅在洛雷斯坦和伊拉姆省就有至少28名抗议者和旁观者被杀害，其中包括儿童。</p>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="timeline-date">2026年1月5日</span>
+                    <h3 class="timeline-title">政府宣布补贴措施</h3>
+                    <p class="timeline-content">伊朗政府宣布将从1月10日起向符合条件的公民提供每月1000万里亚尔（约合50元人民币）的补贴，连续发放四个月，试图平息民怨。</p>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="timeline-date">2026年1月8日</span>
+                    <h3 class="timeline-title">互联网全面封锁</h3>
+                    <p class="timeline-content">在前伊朗王储礼萨·巴列维呼吁民众上街后，伊朗当局实施全国性互联网封锁。这是该政权历史上持续时间最长的数字封锁之一。同日，镇压力度显著升级，仅德黑兰就有至少217人被杀。</p>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="timeline-date">2026年1月10日</span>
+                    <h3 class="timeline-title">死亡人数急剧攀升</h3>
+                    <p class="timeline-content">据伊朗国际报道，在过去48小时内约有2000名抗议者被杀，《时代》杂志估计这一数字可能高达6000人。多家医院转入危机模式。</p>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="timeline-date">2026年1月11日</span>
+                    <h3 class="timeline-title">总统发表全国讲话</h3>
+                    <p class="timeline-content">佩泽希齐扬总统向全国发表讲话，承诺推进经济改革并解决问题，同时指责美国和以色列策划骚乱。政府宣布三天全国哀悼。</p>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="timeline-date">2026年1月12-13日</span>
+                    <h3 class="timeline-title">联合国安理会召开紧急会议</h3>
+                    <p class="timeline-content">应美国要求，联合国安理会就伊朗局势召开会议。哈梅内伊发表声明称伊朗人民"粉碎了境外敌人的阴谋"。伊朗国际通过多阶段调查确认至少12000名平民死亡。</p>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="timeline-date">2026年1月14-15日</span>
+                    <h3 class="timeline-title">抗议活动逐渐被压制</h3>
+                    <p class="timeline-content">在持续的互联网封锁和血腥镇压下，抗议活动开始减弱。美国总统特朗普警告伊朗不得处决抗议者，称美国将采取"强有力的行动"。G7和欧盟考虑实施新制裁。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="causes">
+            <h2 class="section-title">起因分析</h2>
+
+            <div class="info-card">
+                <h3 class="info-card-title">经济危机：货币崩溃</h3>
+                <ul>
+                    <li><strong>里亚尔暴跌：</strong>2025年，1美元可兑换145万里亚尔（黑市价格），而一年前仅为82万里亚尔，贬值近100%</li>
+                    <li><strong>通货膨胀飙升：</strong>2025年12月通胀率达42.2%，食品价格上涨72%，医疗用品上涨50%</li>
+                    <li><strong>购买力崩溃：</strong>普通民众难以负担日常必需品，生活水平急剧下降</li>
+                </ul>
+            </div>
+
+            <div class="info-card">
+                <h3 class="info-card-title">政治根源：外交优先引发不满</h3>
+                <ul>
+                    <li><strong>代理人战争支出：</strong>民众不满政府向真主党、哈马斯等组织拨款，而忽视国内民生</li>
+                    <li><strong>地区冲突影响：</strong>2025年6月与以色列的"12日战争"后，里亚尔贬值60%</li>
+                    <li><strong>叙利亚失利：</strong>阿萨德政权垮台被认为是伊朗影响力衰退的标志</li>
+                    <li><strong>国际制裁：</strong>西方制裁持续压缩伊朗经济空间，核协议重返前景黯淡</li>
+                </ul>
+            </div>
+
+            <div class="data-viz">
+                <h4 class="data-viz-title">里亚尔对美元汇率变化（黑市）</h4>
+                <div class="bar-chart">
+                    <div class="bar-item">
+                        <span class="bar-label">2022年</span>
+                        <div class="bar-container">
+                            <div class="bar-fill" data-width="30"></div>
+                        </div>
+                        <span class="bar-value">43万</span>
+                    </div>
+                    <div class="bar-item">
+                        <span class="bar-label">2024年初</span>
+                        <div class="bar-container">
+                            <div class="bar-fill" data-width="57"></div>
+                        </div>
+                        <span class="bar-value">82万</span>
+                    </div>
+                    <div class="bar-item">
+                        <span class="bar-label">2025年6月</span>
+                        <div class="bar-container">
+                            <div class="bar-fill" data-width="72"></div>
+                        </div>
+                        <span class="bar-value">100万</span>
+                    </div>
+                    <div class="bar-item">
+                        <span class="bar-label">2025年12月</span>
+                        <div class="bar-container">
+                            <div class="bar-fill" data-width="100"></div>
+                        </div>
+                        <span class="bar-value">145万</span>
+                    </div>
+                </div>
+            </div>
+
+            <p>示威者的口号清晰地反映了这种不满。许多人高喊<span class="highlight">"不为加沙、不为黎巴嫩，我命只献给伊朗"</span>，直接批评政府的外交政策优先级。这表明抗议已从单纯的经济诉求演变为对整个政权合法性的质疑。</p>
+        </section>
+
+        <section class="section" id="response">
+            <h2 class="section-title">各方反应</h2>
+
+            <div class="info-card">
+                <h3 class="info-card-title">伊朗政府</h3>
+                <ul>
+                    <li>最高领袖哈梅内伊称人民"粉碎了境外敌人利用国内雇佣兵实施的阴谋"</li>
+                    <li>总统佩泽希齐扬承诺推进经济改革，但同时指责美以策划骚乱</li>
+                    <li>央行行长被撤换，新任行长为前经济部长阿卜杜勒纳赛尔·赫马蒂</li>
+                    <li>外长阿拉格齐声称掌握美以参与"恐怖袭击"的证据</li>
+                    <li>实施全国互联网封锁，搜查星链卫星天线</li>
+                </ul>
+            </div>
+
+            <div class="info-card">
+                <h3 class="info-card-title">国际社会</h3>
+                <ul>
+                    <li><strong>美国：</strong>特朗普警告伊朗勿处决抗议者；宣布对伊朗贸易伙伴加征关税；林肯号航母战斗群重新部署至中东</li>
+                    <li><strong>联合国：</strong>人权事务高级专员蒂尔克对暴力镇压表示震惊，呼吁立即停止；安理会召开紧急会议</li>
+                    <li><strong>欧盟与G7：</strong>考虑对伊朗实施新一轮制裁</li>
+                    <li><strong>国际特赦组织：</strong>呼吁全球采取外交行动，终结有罪不罚现象</li>
+                    <li><strong>中国：</strong>表示希望伊朗政府和人民克服困难，保持国家稳定</li>
+                </ul>
+            </div>
+
+            <div class="quote-block">
+                <p class="quote-text">"伊朗对抗议民众的暴力镇压升级令我震惊。我敦促德黑兰当局立即停止暴力行动。"</p>
+                <p class="quote-source">— 联合国人权事务高级专员 福尔克尔·蒂尔克（2026年1月13日）</p>
+            </div>
+        </section>
+
+        <section class="section" id="impact">
+            <h2 class="section-title">影响与展望</h2>
+
+            <p>此次抗议活动对伊朗国内局势和地区格局都产生了深远影响。从国内来看，尽管抗议在政府的铁腕镇压下逐渐平息，但民众对政权的不满情绪并未消散。经济危机仍在持续，政府的补贴措施难以从根本上解决问题。</p>
+
+            <div class="info-card">
+                <h3 class="info-card-title">可能的后续发展</h3>
+                <ul>
+                    <li><strong>内部压力持续：</strong>经济问题短期内难以解决，民怨可能再次爆发</li>
+                    <li><strong>国际孤立加深：</strong>新一轮制裁可能进一步恶化经济形势</li>
+                    <li><strong>地区紧张升级：</strong>以色列可能利用伊朗内部动荡采取行动</li>
+                    <li><strong>政权稳定性受考验：</strong>革命卫队的忠诚度和内部分歧值得关注</li>
+                    <li><strong>核问题复杂化：</strong>伊朗与西方关系将以对抗为主基调</li>
+                </ul>
+            </div>
+
+            <p>从更宏观的视角来看，2025-2026年伊朗抗议活动是中东地区深层次矛盾的又一次集中爆发。在全球地缘政治格局加速重构的背景下，伊朗的未来走向将对整个中东乃至世界产生重要影响。</p>
+
+            <div class="quote-block">
+                <p class="quote-text">"伊朗和以色列再次爆发直接冲突的可能性不容低估。"</p>
+                <p class="quote-source">— 上海外国语大学中东研究所分析</p>
+            </div>
+        </section>
+
+        <section class="sources">
+            <h3 class="sources-title">参考来源</h3>
+            <ul class="sources-list">
+                <li><a href="https://zh.wikipedia.org/wiki/2025—2026年伊朗抗议活动" target="_blank" rel="noopener">维基百科 - 2025-2026年伊朗抗议活动</a></li>
+                <li><a href="https://www.aljazeera.com/news/liveblog/2026/1/12/iran-protests-live-us-rhetoric-rises-as-tehran-announces-3-days-mourning" target="_blank" rel="noopener">Al Jazeera - Iran protests updates</a></li>
+                <li><a href="https://www.cnn.com/world/live-news/iran-protests-trump-01-15-26" target="_blank" rel="noopener">CNN - Iran protests updates</a></li>
+                <li><a href="https://www.amnesty.org/en/latest/news/2026/01/iran-massacre-of-protesters-demands-global-diplomatic-action-to-signal-an-end-to-impunity/" target="_blank" rel="noopener">Amnesty International - Iran protests report</a></li>
+                <li><a href="https://iranhr.net/en/articles/8529/" target="_blank" rel="noopener">Iran Human Rights - Death toll report</a></li>
+                <li><a href="https://www.guancha.cn/internation/2025_12_31_802316.shtml" target="_blank" rel="noopener">观察者网 - 伊朗年末动荡分析</a></li>
+                <li><a href="https://sputniknews.cn/20260113/1069281485.html" target="_blank" rel="noopener">俄罗斯卫星通讯社 - 伊朗骚乱报道</a></li>
+                <li><a href="https://www.news.cn/world/20260110/6d679c692a244c368cd3ad6208859022/c.html" target="_blank" rel="noopener">新华网 - 2026中东热点展望</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>本报告基于公开信息整理，仅供参考</p>
+        <p>最后更新：2026年1月16日</p>
+    </footer>
+
+    <script>
+        // Progress Bar
+        const progressBar = document.getElementById('progressBar');
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+            progressBar.style.width = scrollPercent + '%';
+        });
+
+        // Header visibility
+        const header = document.getElementById('header');
+        let lastScroll = 0;
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.scrollY;
+            if (currentScroll > 100) {
+                header.classList.add('visible');
+            } else {
+                header.classList.remove('visible');
+            }
+            lastScroll = currentScroll;
+        });
+
+        // Intersection Observer for sections
+        const sections = document.querySelectorAll('.section');
+        const timelineItems = document.querySelectorAll('.timeline-item');
+        const tocItems = document.querySelectorAll('.toc-item');
+
+        const sectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+
+                    // Update TOC
+                    const id = entry.target.id;
+                    tocItems.forEach(item => {
+                        item.classList.toggle('active', item.getAttribute('href') === '#' + id);
+                    });
+                }
+            });
+        }, { threshold: 0.1 });
+
+        sections.forEach(section => sectionObserver.observe(section));
+
+        // Timeline animation
+        const timelineObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, index * 100);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        timelineItems.forEach(item => timelineObserver.observe(item));
+
+        // Animate numbers
+        const animateNumber = (element, target) => {
+            const duration = 2000;
+            const start = 0;
+            const startTime = performance.now();
+
+            const update = (currentTime) => {
+                const elapsed = currentTime - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                const easeProgress = 1 - Math.pow(1 - progress, 3);
+                const current = Math.floor(easeProgress * target);
+                element.textContent = current.toLocaleString();
+
+                if (progress < 1) {
+                    requestAnimationFrame(update);
+                }
+            };
+
+            requestAnimationFrame(update);
+        };
+
+        // Animate stat cards
+        const statCards = document.querySelectorAll('.stat-card');
+        const statObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const numberEl = entry.target.querySelector('.stat-number');
+                    const target = parseInt(numberEl.dataset.target);
+                    animateNumber(numberEl, target);
+                    statObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        statCards.forEach(card => statObserver.observe(card));
+
+        // Animate bar chart
+        const barChart = document.querySelector('.bar-chart');
+        const barObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const bars = entry.target.querySelectorAll('.bar-fill');
+                    bars.forEach((bar, index) => {
+                        setTimeout(() => {
+                            bar.style.width = bar.dataset.width + '%';
+                        }, index * 200);
+                    });
+                    barObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        if (barChart) barObserver.observe(barChart);
+
+        // Smooth scroll for TOC
+        tocItems.forEach(item => {
+            item.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = document.querySelector(item.getAttribute('href'));
+                target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Smooth scroll for header nav
+        document.querySelectorAll('.header-nav a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = document.querySelector(link.getAttribute('href'));
+                target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>

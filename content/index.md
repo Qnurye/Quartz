@@ -1,5 +1,12 @@
 ---
-{"publish":true,"aliases":"","title":"Read me","created":"2025-12-13T21:08:26+08:00","modified":"2025-12-28T01:08:09.282+08:00","tags":["README"],"cssclasses":""}
+publish: true
+aliases: ""
+title: Read me
+created: 2025-12-13T21:08:26+08:00
+modified: 2025-12-28T01:08:09.282+08:00
+tags:
+  - README
+cssclasses: ""
 ---
 
 
@@ -15,7 +22,7 @@ I find that writing "notes"—which are shorter and more cohesive—involves muc
 
 Honestly, I’m not quite sure myself.
 
-Being a mere porter of information rather than a creator feels a bit dull, especially in an era where everyone prefers [[03 resources/things/AIO]]. Unlike contributing to Wikipedia, this space is more private, freer, and decidedly non-authoritative. I’m not entirely sure what I want to express yet, as it feels like there are very few questions left that don't already have a single correct answer.
+Being a mere porter of information rather than a creator feels a bit dull, especially in an era where everyone prefers [[03 resources/concepts/AIO]]. Unlike contributing to Wikipedia, this space is more private, freer, and decidedly non-authoritative. I’m not entirely sure what I want to express yet, as it feels like there are very few questions left that don't already have a single correct answer.
 
 I might even just use this place as a transit hub for sharing documents—it's all pretty random. Feel free to wander around!
 
@@ -27,6 +34,6 @@ I might even just use this place as a transit hub for sharing documents—it's a
 
 ## 这里会有什么？
 
-其实我也不知道，特别是在大家都更喜欢 [[03 resources/things/AIO]] 的背景下，当信息的搬运工而非生产者，有点无趣了。相比贡献在维基百科，这里对我来说是更私人、更自由、更非权威的一个表达空间。我也不太确定想表达什么，很少有问题没有唯一的正确答案。我甚至可能会把这里当作分享文档的一个中转站，比较随机。欢迎随机漫步！
+其实我也不知道，特别是在大家都更喜欢 [[03 resources/concepts/AIO]] 的背景下，当信息的搬运工而非生产者，有点无趣了。相比贡献在维基百科，这里对我来说是更私人、更自由、更非权威的一个表达空间。我也不太确定想表达什么，很少有问题没有唯一的正确答案。我甚至可能会把这里当作分享文档的一个中转站，比较随机。欢迎随机漫步！
 
 > 阅读 [[03 resources/guides/A guide to setup Quartz]] 如果你也想要把你的 Obsidian 变成公共数字花园！

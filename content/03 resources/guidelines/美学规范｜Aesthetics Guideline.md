@@ -1,5 +1,11 @@
 ---
-{"publish":true,"aliases":"","created":"2025-11-29T01:59:06+08:00","modified":"2026-01-03T00:52:30.768+08:00","tags":["guideline"],"cssclasses":""}
+publish: true
+aliases: ""
+created: 2025-11-29T01:59:06+08:00
+modified: 2026-01-03T17:58:14.083+08:00
+tags:
+  - guideline
+cssclasses: ""
 ---
 
 

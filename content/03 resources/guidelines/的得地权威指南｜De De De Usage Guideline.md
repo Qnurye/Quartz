@@ -1,5 +1,11 @@
 ---
-{"publish":true,"aliases":"De De De Usage 的得地用法","created":"2025-12-16T11:00:00+08:00","modified":"2025-12-16T01:27:31.819+08:00","tags":["guideline"],"cssclasses":""}
+publish: true
+aliases: De De De Usage 的得地用法
+created: 2025-12-16T11:00:00+08:00
+modified: 2025-12-16T01:27:31.819+08:00
+tags:
+  - guideline
+cssclasses: ""
 ---
 
 

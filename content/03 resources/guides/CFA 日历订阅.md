@@ -3,7 +3,7 @@ publish: true
 aliases: ""
 title: CFA 日历订阅
 created: 2025-07-06 21:00:00
-modified: 2026-01-20T11:38:56.734+08:00
+modified: 2026-02-01T13:22:31.756+08:00
 cssclasses: ""
 ---
 
@@ -34,37 +34,37 @@ cssclasses: ""
 
 以 Web App 为例，点击左下角的➕号，点击 `通过网址添加`。
 
-![[Pasted image 20250706211429.png]]
+![[_/assets/Pasted image 20250706211429.png]]
 
-![[Pasted image 20250706211541.png]]
+![[_/assets/Pasted image 20250706211541.png]]
 
 输入订阅链接。比如我常住在苏州，比较关注苏州的片单，则可输入 `https://cfa.qnury.es/suzhou/calendar.ics`。
 
-![[Pasted image 20250706211757.png]]
+![[_/assets/Pasted image 20250706211757.png]]
 
 点击完毕添加日历后，则可以返回首页，查看苏州馆的最近排片啦！
 
 小帖士：点击放映条目，可以将其复制到自己常用的日历账户。这样可以标记自己要看的影片活动，还可以设置提醒。
 
-![[Pasted image 20250706212456.png]]
+![[_/assets/Pasted image 20250706212456.png]]
 
 ## iCloud Calendar
 
 以 iOS 端为例。类似上面提到的 Google Calendar 操作方法，在 iCloud Calendar 中，点击主界面下部的 `日历`，点击左下角的 `添加日历订阅`，进入订阅日历新建页面。
 
-![[Pasted image 20250706212957.png]]
+![[_/assets/Pasted image 20250706212957.png]]
 
-![[Pasted image 20250706213049.png]]
+![[_/assets/Pasted image 20250706213049.png]]
 
 假如我是常住在在北京市百子湾地区的居民，更关注百子湾 1 号厅的排片，那么这次我可以填入 `https://cfa.qnury.es/beijing/baiziwan/1/calendar.ics`。输入完成后，点击 `订阅` 按钮，即可完成订阅。
 
-![[Pasted image 20250706213244.png]]
+![[_/assets/Pasted image 20250706213244.png]]
 
-![[Pasted image 20250706213318.png]]
+![[_/assets/Pasted image 20250706213318.png]]
 
 类似地，决定好要看的影片，可以长按活动，选择 `复制`，然后点击右上角的➕号，添加新活动，即可创建一份同样的活动到自己常用的日历账户。
 
-![[Pasted image 20250706213659.png]]![[Pasted image 20250706213847.png]]
+![[_/assets/Pasted image 20250706213659.png]]![[_/assets/Pasted image 20250706213847.png]]
 
 # 了解更多
 

@@ -2,7 +2,7 @@
 publish: true
 aliases: ""
 created: 2025-12-13T23:04:06+08:00
-modified: 2025-12-13T23:45:22.286+08:00
+modified: 2026-03-03T00:13:37.838+08:00
 cssclasses: ""
 ---
 
@@ -21,7 +21,7 @@ cssclasses: ""
 2. **大模型调用搜索引擎搜索、阅读、整理回答**
 3. **把 AI 的阅读报告拍到用户第一眼可以看到的地方**：首先……其次……总之。
 
-![[_/assets/Pasted image 20251213232236.png]]
+![Pasted image 20251213232236](https://bucket.qnury.es/2026/03/f0c57ced2b60a060b57ac2bc6d3208f3.png)
 
 # 影响
 
